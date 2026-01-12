@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Project Preview </title>
+    <title> Application Overview </title>
     <script src="https://ui5.sap.com/1.136.9/resources/sap-ui-core.js" 
             id="sap-ui-bootstrap"
             data-sap-ui-theme="sap_horizon"
@@ -27,7 +27,7 @@
                     return Controller.extend("PreviewController", {
                         onInit: function () {
 
-                            const data = {"Services":[{"ServiceName":"RiskManagementService","DetailsURL":"./odata/v4/risk-management/","Metadata":"./odata/v4/risk-management/$metadata","Entities":[{"Name":"BusinessPartnerLocal","URL":"./odata/v4/risk-management/BusinessPartnerLocal","FioriURL":"$fiori-preview/RiskManagementService/BusinessPartnerLocal#preview-app"},{"Name":"Riscos","URL":"./odata/v4/risk-management/Riscos","FioriURL":"$fiori-preview/RiskManagementService/Riscos#preview-app"},{"Name":"Mitigacoes","URL":"./odata/v4/risk-management/Mitigacoes","FioriURL":"$fiori-preview/RiskManagementService/Mitigacoes#preview-app"},{"Name":"BusinessPartner","URL":"./odata/v4/risk-management/BusinessPartner","FioriURL":"$fiori-preview/RiskManagementService/BusinessPartner#preview-app"}],"EntitiesCount":4}]}
+                            const data = {"Services":[{"ServiceName":"RiskManagementService","DetailsURL":"./odata/v4/risk-management/","Metadata":"./odata/v4/risk-management/$metadata","Entities":[{"Name":"BusinessPartnerLocal","URL":"./odata/v4/risk-management/BusinessPartnerLocal","FioriURL":""},{"Name":"Riscos","URL":"./odata/v4/risk-management/Riscos","FioriURL":""},{"Name":"Mitigacoes","URL":"./odata/v4/risk-management/Mitigacoes","FioriURL":""},{"Name":"BusinessPartner","URL":"./odata/v4/risk-management/BusinessPartner","FioriURL":""}],"EntitiesCount":4}]}
                             this.getView().setModel(new JSONModel(data));
                         }
                     });

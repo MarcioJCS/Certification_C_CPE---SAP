@@ -1,4 +1,4 @@
-using RiskManagement from '../db/schema1.cds';
+using RiskManagement from '../db/schema.cds';
 
 using { BusinessPartnerA2X as BP } from '../srv/external/BusinessPartnerA2X.cds';
 
